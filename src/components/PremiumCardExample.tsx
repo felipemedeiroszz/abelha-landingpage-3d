@@ -8,7 +8,7 @@ import {
   Shield, 
   Sparkles, 
   Heart,
-  Bee,
+  Hexagon,
   Flower,
   Sun,
   Star,
@@ -89,7 +89,7 @@ export default function PremiumCardExample() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <PremiumCard
             number="01"
-            icon={Bee}
+            icon={Hexagon}
             title="Extração Artesanal"
             description="Processo manual de extração que preserva a qualidade e integridade do mel."
             delay={0}
@@ -180,7 +180,7 @@ export default function PremiumCardExample() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <PremiumCard
             number="01"
-            icon={Bee}
+            icon={Hexagon}
             title="Preservação das Abelhas"
             description="Práticas que garantem a saúde e sobrevivência das colmeias."
             delay={0}
