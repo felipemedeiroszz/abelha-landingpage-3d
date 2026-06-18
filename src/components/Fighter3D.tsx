@@ -13,6 +13,10 @@ function createWingTexture() {
   canvas.height = 512;
   const ctx = canvas.getContext('2d');
   
+  if (!ctx) {
+    return new THREE.CanvasTexture(canvas);
+  }
+  
   // Base transparent with gradient
   const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
   gradient.addColorStop(0, 'rgba(200, 230, 255, 0.4)');
@@ -90,6 +94,10 @@ function createBodyTexture() {
   canvas.height = 512;
   const ctx = canvas.getContext('2d');
   
+  if (!ctx) {
+    return new THREE.CanvasTexture(canvas);
+  }
+  
   // Base golden yellow with gradient
   const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
   gradient.addColorStop(0, '#FFD700');
@@ -155,6 +163,10 @@ function createStripeTexture() {
   canvas.width = 512;
   canvas.height = 512;
   const ctx = canvas.getContext('2d');
+  
+  if (!ctx) {
+    return new THREE.CanvasTexture(canvas);
+  }
   
   // Base black with gradient
   const gradient = ctx.createLinearGradient(0, 0, 512, 512);
