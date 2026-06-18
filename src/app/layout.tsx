@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Academia de Artes Marciais - MMA, Muay Thai, Jiu-Jitsu',
-  description: 'Treinamento profissional de MMA, Muay Thai, Jiu-Jitsu, Boxe e Defesa Pessoal para todos os níveis. Transforme seu corpo, fortaleça sua mente, domine sua arte.',
+  title: ' Melzinho',
+  description: 'O melhor mel que poderia estar em sua mesa.',
 };
 
 export default function RootLayout({
